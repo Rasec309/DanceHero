@@ -26,7 +26,7 @@ public class ButtonManager : MonoBehaviour
     {
         foreach ( Animator button in songButtons)
         {
-            closeButton.Play(animationName);
+            button.Play(animationName);
             yield return new WaitForSeconds(timeBetweenBottons);
         }
     }

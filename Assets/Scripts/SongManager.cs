@@ -8,7 +8,16 @@ public class SongManager : MonoBehaviour
     [SerializeField]
     private UnityEvent onSongStart;
     [SerializeField]
+    private UnityEvent onSongSelected;
+    [SerializeField]
     private UnityEvent onSongEnd;
+    private SongData currentSongData;
+    
+    public void SelectSong(SongData songData)
+    {
+        currentSongData = songData;
+        onSongSelected?.Invoke();
+    }
     public void  PlaySong(SongData songData)
     {
         characterAnimator.Play(songData.animationName);
@@ -19,5 +28,11 @@ public class SongManager : MonoBehaviour
     {
         SoundManager.instance.StopMusic();
         onSongEnd?.Invoke();
+    }
+    public void StartSong()
+    {
+        characterAnimator.Play(currentSongData.animationName);
+        SoundManager.instance.PlayMusic(currentSongData.songName);
+        onSongStart?.Invoke();  
     }
 }

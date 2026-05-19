@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 44c56ff3d889e674382f9ca54a68c371
+guid: 66f74e12e08f9da4a86f17e20190c80f
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
@@ -31,11 +31,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Swing
+      name: Ready
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 156
+      lastFrame: 63
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
