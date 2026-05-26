@@ -12,6 +12,8 @@ public class SongManager : MonoBehaviour
     [SerializeField]
     private UnityEvent onSongEnd;
     private SongData currentSongData;
+    [SerializeField]
+    private NotesManager notesManager;
     
     public void SelectSong(SongData songData)
     {
@@ -33,6 +35,7 @@ public class SongManager : MonoBehaviour
     {
         characterAnimator.Play(currentSongData.animationName);
         SoundManager.instance.PlayMusic(currentSongData.songName);
+        notesManager.StartNoteChart(currentSongData.noteChart,currentSongData.speed);
         onSongStart?.Invoke();  
     }
 }

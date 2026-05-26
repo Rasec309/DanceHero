@@ -6,6 +6,6 @@ public class Lane : MonoBehaviour
     private Transform notesPrivot;
     [SerializeField]
     private GameObject notePrefabs;
-    public Transform NotesPrivot => notesPrivot;
+    public Transform NotesPivot => notesPrivot;
     public GameObject NotePrefab => notePrefabs;
 }

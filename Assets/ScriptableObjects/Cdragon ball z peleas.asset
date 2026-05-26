@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SongData
   animationName: HIPHOP
   songName: Cdragon ball z peleas
+  noteChart: {fileID: 4900000, guid: 52a9255eea8b5c84083753881fda341e, type: 3}
+  speed: 300

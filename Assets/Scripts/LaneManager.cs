@@ -3,7 +3,14 @@ using UnityEngine;
 public class LaneManager : MonoBehaviour
 {
     [SerializeField]
+    private string showAnimacionName = "Show";
+    [SerializeField]
+    private string hideAnimationName = "Hide";
+    [SerializeField]
     private Lane[] lanes;
+    [SerializeField]
+    private Animator animator;
+    private bool isHidden = true;
     public Lane GetLane(int index)
     {
         if(index < 0 || index >= lanes.Length)
@@ -13,8 +20,20 @@ public class LaneManager : MonoBehaviour
         }
         return lanes[index];
     }
-    public int GEtLanesCount()
+    public int GetLaneCount()
     {
         return lanes.Length;
     }
+    public void ShowLanes()
+    {
+        animator.Play(showAnimacionName);
+        isHidden = false;
+    }
+    public void HideLanes()
+    {
+        if (isHidden)return;
+        animator.Play(hideAnimationName);
+        isHidden = true;
+    }
+
 }
