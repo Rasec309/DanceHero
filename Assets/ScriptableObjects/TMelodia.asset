@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ebf6454f518bcff4d98e38590a51299f, type: 3}
-  m_Name: DBZRap
+  m_Name: TMelodia
   m_EditorClassIdentifier: Assembly-CSharp::SongData
-  animationName: Swing
-  songName: DBZRap
-  noteChart: {fileID: 4900000, guid: 52a9255eea8b5c84083753881fda341e, type: 3}
-  speed: 1500
+  animationName: Bailecito
+  songName: TMelodia
+  noteChart: {fileID: 4900000, guid: ffdb09eff0faf1841819c1705375e98a, type: 3}
+  speed: 600
