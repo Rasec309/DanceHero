@@ -15,4 +15,4 @@ MonoBehaviour:
   animationName: Rumba
   songName: DBZPoder
   noteChart: {fileID: 4900000, guid: 0f60b262b00d941438a91a85e48fddcc, type: 3}
-  speed: 1300
+  speed: 300

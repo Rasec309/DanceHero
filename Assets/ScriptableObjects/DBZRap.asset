@@ -15,4 +15,4 @@ MonoBehaviour:
   animationName: Swing
   songName: DBZRap
   noteChart: {fileID: 4900000, guid: 52a9255eea8b5c84083753881fda341e, type: 3}
-  speed: 1500
+  speed: 500

@@ -15,4 +15,4 @@ MonoBehaviour:
   animationName: Bailecito
   songName: TMelodia
   noteChart: {fileID: 4900000, guid: ffdb09eff0faf1841819c1705375e98a, type: 3}
-  speed: 1200
+  speed: 400
